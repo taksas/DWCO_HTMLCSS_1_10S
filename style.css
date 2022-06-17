@@ -1,0 +1,135 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #6c6b6b;
+  }
+
+  
+  header {
+    width: 100%; /* 横幅100% */
+    height: 50px;
+    background-color: #FF9A4B;
+  }
+
+
+  main {
+    width: 960px; /* 横幅960px */
+    margin: 0 auto;
+    padding: 50px 0; /* 上下に50px、左右に0pxの内側余白 */
+  }
+  
+  .blog {
+    width: 960px;
+  }
+
+
+  .blog-box {
+    display: flex; /* Flexboxの利用 */
+    flex-wrap: wrap;
+  }
+
+  .blog-box > div {
+    width: 300px;
+    background-color: #EEEEEE;
+  }
+
+  .blog-box > div:nth-child(2) {
+    margin: 0 30px;
+  }
+
+  .contents {
+    margin: 10px;
+  }
+
+  .blog-box1 {
+    position: relative;
+  }
+
+  .pic {
+    width: 280px;
+    height: 150px;
+    margin: 0 0 15px 0;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+
+  .pic1 {
+    background-image: url(img/flow01.png);
+  }
+
+  .pic2 {
+    background-image: url(img/flow02.png);
+  }
+
+  .pic3 {
+    background-image: url(img/flow03.png);
+  }
+
+  
+
+  h3 {
+      margin: 0 0 5px 0;
+    }
+
+  .step {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    width: 45px;
+    color:white;
+    background-color: #FF9A4B;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 50px;
+    background-color: #AAAAAA;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    main {
+      width: 100%;
+    }
+    
+    .blog {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  
+
+  
+    .blog-box > div {
+      width: 100%;
+    }
+  
+    .blog-box > div:nth-child(2) {
+      margin: 20px 0;
+    }
+  
+
+  
+    .pic {
+      width: 100%;
+      height: 150px;
+      margin: 0 0 15px 0;
+      background-size: cover;
+      background-position: bottom center;
+    }
+  
+  
+  
+    
+  
+    h3 {
+        margin: 0 0 5px 0;
+      }
+  
+  }
