@@ -106,15 +106,18 @@
   
 
   
+    .blog-box {
+      display: block; /* Flexboxの利用 */
+      flex-wrap: wrap;
+    }
+
     .blog-box > div {
       width: 100%;
     }
-  
+
     .blog-box > div:nth-child(2) {
       margin: 20px 0;
     }
-  
-
   
     .pic {
       width: 100%;
